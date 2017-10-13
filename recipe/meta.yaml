@@ -1,6 +1,6 @@
 {% set name = "resonance" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "af554059984027a1419a5359339c0ecc1543edd9bdf107b07f6ae6722c51f063" %}
+{% set version = "0.4.1" %}
+{% set sha256 = "51ee602de474c9b544f1122b67a17d4332da553b7c7af16204bc75e8f336a0d4" %}
 
 package:
   name: {{ name|lower }}
@@ -31,7 +31,9 @@ test:
   imports:
     - resonance
     - resonance.version
+    - resonance.system
     - resonance.linear_systems
+    - resonance.nonlinear_systems
     - resonance.functions
     - resonance.tests
 
