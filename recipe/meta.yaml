@@ -1,6 +1,6 @@
 {% set name = "resonance" %}
-{% set version = "0.4.2" %}
-{% set sha256 = "a1cdcc5342d207607487be5895f0330d9e14a50c1e6b6e472b76e556a5ded77d" %}
+{% set version = "0.11.0" %}
+{% set sha256 = "17ff622c29cfa199e40fa48a47d37c7f847d41223d08a425ed0a348934279282" %}
 
 package:
   name: {{ name|lower }}
