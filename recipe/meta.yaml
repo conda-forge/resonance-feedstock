@@ -1,6 +1,6 @@
 {% set name = "resonance" %}
-{% set version = "0.12.1" %}
-{% set sha256 = "45e47ca27a655e1ccf48e34b6337b6dfb1afd678b2c4bd092e2e665d7ab00d4e" %}
+{% set version = "0.13.0" %}
+{% set sha256 = "3b5fdc639901c2014c8eb9c55bab395c2f84e01b9d39b6ae72ba4e52a9fbb315" %}
 
 package:
   name: {{ name|lower }}
@@ -22,10 +22,10 @@ requirements:
     - setuptools
   run:
     - python
-    - numpy >=1.13
-    - scipy >=0.19
-    - pandas >=0.20
-    - matplotlib >=2.1
+    - numpy >=1.11
+    - scipy >=0.17
+    - pandas >=0.17
+    - matplotlib >=1.5
 
 test:
   imports:
