@@ -1,25 +1,22 @@
-{% set name = "resonance" %}
 {% set version = "0.19.1" %}
-{% set sha256 = "844f1e8822bf56d65d510937cc1203b623fe8c46ef2075f1165e5334265f08c2" %}
 
 package:
-  name: {{ name|lower }}
+  name: resonance
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/r/resonance/resonance-{{ version }}.tar.gz
+  sha256: 844f1e8822bf56d65d510937cc1203b623fe8c46ef2075f1165e5334265f08c2
 
 build:
   number: 1000
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: True  # [py2k]
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - numpy >=1.11
