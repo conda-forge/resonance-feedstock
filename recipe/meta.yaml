@@ -1,4 +1,4 @@
-{% set version = "0.20.0" %}
+{% set version = "0.21.0" %}
 
 package:
   name: resonance
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/resonance/resonance-{{ version }}.tar.gz
-  sha256: 5f5ea857c85ed9c036a977009c0c032fd5c7834dba2a1f4fb04c41458e976cde
+  sha256: 5cd39e57aa825888dcfdd590df5f0427c722a159d75503256d6a76af3d11d618
 
 build:
   number: 0
