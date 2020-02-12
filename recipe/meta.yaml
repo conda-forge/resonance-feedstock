@@ -9,7 +9,7 @@ source:
   sha256: 5cd39e57aa825888dcfdd590df5f0427c722a159d75503256d6a76af3d11d618
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: True  # [py<36]
 
@@ -22,7 +22,7 @@ requirements:
     - numpy >=1.13
     - scipy >=0.19
     - pandas >=0.17
-    - matplotlib >=2.1
+    - matplotlib-base >=2.1
 
 test:
   imports:
