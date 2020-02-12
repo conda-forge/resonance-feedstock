@@ -3,7 +3,7 @@ About resonance
 
 Home: http://github.com/moorepants/resonance
 
-Package license: CC-BY-4.0
+Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
