@@ -1,4 +1,4 @@
-{% set version = "0.21.0" %}
+{% set version = "0.22.0" %}
 
 package:
   name: resonance
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/resonance/resonance-{{ version }}.tar.gz
-  sha256: 5cd39e57aa825888dcfdd590df5f0427c722a159d75503256d6a76af3d11d618
+  sha256: 0cc09766e335e0f4ae81caac6bda99ef702636bb097cc1b1d9569a2e70dcdc38
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: True  # [py<36]
 
