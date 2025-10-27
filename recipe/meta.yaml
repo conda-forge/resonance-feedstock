@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/r/resonance/resonance-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/r/resonance/resonance-{{ version }}.tar.gz
   sha256: 0cc09766e335e0f4ae81caac6bda99ef702636bb097cc1b1d9569a2e70dcdc38
 
 build:
-  number: 7
+  number: 8
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: True  # [py<36]
 
